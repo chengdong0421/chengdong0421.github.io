@@ -1,0 +1,675 @@
+
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod="popu_3"> 
+
+
+<a href="http://bss.csdn.net/m/topic/edu_exam
+" target="_blank">
+<font color="blue">2017直通软考，拿证无忧
+
+
+</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://edu.csdn.net/huiyiCourse/detail/274
+" target="_blank">
+<font color="red">程序员简历优化指南！ 
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/turingbooks/article/details/54582158" target="_blank">
+<font color="blue">程序员1月书讯
+</font></a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="http://bss.csdn.net/m/product/aliyun_essay/index
+" target="_blank">
+<font color="red">云端应用征文大赛，秀绝招，赢无人机！
+</font></a>
+
+
+</div>                        </div>
+                        
+
+
+
+  
+<link href="http://static.blog.csdn.net/css/comment1.css" type="text/css" rel="stylesheet">
+<link href="http://static.blog.csdn.net/css/style1.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript" src="http://download.csdn.net/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://c.csdnimg.cn/rabbit/search-service/main.js"></script>
+<link rel="stylesheet" href="http://static.blog.csdn.net/public/res-min/markdown_views.css?v=1.0">
+<link rel="stylesheet" href="http://static.blog.csdn.net/css/category.css?v=1.0">
+<script type="text/javascript" src="http://static.blog.csdn.net/public/res/bower-libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/web-storage-cache.min.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/replace.min.js"></script>
+
+
+
+
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+      
+      var fasrc="http://my.csdn.net/my/favorite/miniadd?t=Dependency+Walker%e4%bd%bf%e7%94%a8%e8%af%b4%e6%98%8e&u=http://blog.csdn.net/swort_177/article/details/5426848"
+
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Repost"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/swort_177/article/details/5426848">
+        Dependency Walker使用说明            
+        </a></span>
+    </h1>
+</div>
+
+   
+
+        <div class="article_manage clearfix">
+        <div class="article_l">
+            <span class="link_categories">
+            标签：
+              <a href="http://www.csdn.net/tag/dll" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">dll</a><a href="http://www.csdn.net/tag/exe" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">exe</a><a href="http://www.csdn.net/tag/windows" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">windows</a><a href="http://www.csdn.net/tag/vb" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">vb</a><a href="http://www.csdn.net/tag/qq" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">qq</a><a href="http://www.csdn.net/tag/%e5%b7%a5%e5%85%b7" target="_blank" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">工具</a>
+            </span>
+        </div>
+        <div class="article_r">
+            <span class="link_postdate">2010-03-29 11:10</span>
+            <span class="link_view" title="阅读次数">31950人阅读</span>
+            <span class="link_comments" title="评论次数"> <a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(22)</span>
+            <span class="link_collect tracking-ad" data-mod="popu_171"> <a href="javascript:void(0);" onclick="javascript:collectArticle('Dependency+Walker%e4%bd%bf%e7%94%a8%e8%af%b4%e6%98%8e','5426848');return false;" title="收藏" target="_blank">收藏</a></span>
+             <span class="link_report"> <a href="#report" onclick="javascript:report(5426848,2);return false;" title="举报">举报</a></span>
+
+        </div>
+    </div>
+    <div class="embody" style="display:none" id="embody">
+        <span class="embody_t">本文章已收录于：</span>
+        <div class="embody_c" id="lib" value="{&quot;err&quot;:0,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}"></div>
+    </div>
+    <style type="text/css">        
+            .embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            try
+            {
+                var lib = eval("("+$("#lib").attr("value")+")");
+                var html = "";
+                if (lib.err == 0) {
+                    $.each(lib.data, function (i) {
+                        var obj = lib.data[i];
+                        //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                        html += ' <a href="' + obj.url + '" target="_blank">';
+                        html += ' <img src="' + obj.logo + '">';
+                        html += ' <em><b>' + obj.name + '</b></em>';
+                        html += ' </a>';
+                    });
+                    if (html != "") {
+                        setTimeout(function () {
+                            $("#lib").html(html);                      
+                            $("#embody").show();
+                        }, 100);
+                    }
+                }      
+            } catch (err)
+            { }
+            
+        });
+    </script>
+      <div class="category clearfix">
+        <div class="category_l">
+           <img src="http://static.blog.csdn.net/images/category_icon.jpg">
+            <span>分类：</span>
+        </div>
+        <div class="category_r">
+                    <label onclick="GetCategoryArticles('514645','swort_177','top','5426848');">
+                        <span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">基本常识<em>（45）</em></span>
+                      <img class="arrow-down" src="http://static.blog.csdn.net/images/arrow_triangle _down.jpg" style="display:inline;">
+                      <img class="arrow-up" src="http://static.blog.csdn.net/images/arrow_triangle_up.jpg" style="display:none;">
+                        <div class="subItem">
+                            <div class="subItem_t"><a href="http://blog.csdn.net/swort_177/article/category/514645" target="_blank">作者同类文章</a><i class="J_close">X</i></div>
+                            <ul class="subItem_l" id="top_514645">                            
+                            </ul>
+                        </div>
+                    </label>                    
+        </div>
+    </div>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/category.js"></script>  
+
+  
+
+  
+  
+     
+
+<div id="article_content" class="article_content">
+<p>在Windows世界中，有无数块活动的大陆，它们都有一个共同的名字——动态链接库。现在就让我们走进这些神奇的活动大陆，找出它们隐藏已久的秘密吧！ <br><br>　　初窥门径:Windows的基石 <br><br>　　随便打开一个系统目录，一眼望去就能看到很多扩展名DLL的文件，这些就是经常说的“动态链接库”，DLL是Dynamic Link Library(即“动态链接库”)的缩写。从Microsoft公司推出首个版本的Windows以来，动态链接库就一直是这个<a href="http://lib.csdn.net/base/operatingsystem" class="replace_word" title="操作系统知识库" target="_blank" style="color:#df3434; font-weight:bold;">操作系统</a>的基础。 <br><br>　　1.看看DLL里有什么 <br><br>　　与其用晦涩的专业术语来解决DLL是什么，不如先来看看DLL里有什么。DLL和EXE文件一样，其中包含的也是程序的二进制执行代码和程序所需的资源(比如图标、对话框、字符串等)，可是为什么要把代码放在DLL里面，而不是做成EXE呢？其实DLL中的代码是以API函数形式出现的，通俗地说，DLL中包含的程序代码都被做成了一个个小模块，应用程序通过按下所需DLL中特定的按钮，来调用DLL中这个按钮所代表的功能。在使用“记事本”等程序时，如果要保存文件或打开文件，就会弹出通用文件对话框，让我们选择文件位置。你可知道，这就是调用了系统底层DLL中的通用对话框界面。 <br><br>　　2.系统中几个重要的DLL <br><br>　　Windows中有3个非常重要的底层DLL:Kernel32.dll、User32.dll、GDI32.dll。其中Kernel32.dll顾名思义就是内核相关的功能，主要包含用于管理内存、进程和线程的函数;而User32.dll中包含的则是用于执行用户界面任务的函数，比如把用户的鼠标点击操作传递给窗口，以便窗口根据用户的点击来执行预定的事件;GDI32.dll的名称用了缩写，全称是Graphical Device Interface(图形设备接口)，包含用于画图和显示文本的函数，比如要显示一个程序窗口，就调用了其中的函数来画这个窗口。 <br><br>　　3.为什么要用DLL <br><br>　　刚才在谈到这个问题的时候，我们只是解释了DLL将程序代码封装成函数的原理。为什么封装成函数，就能成为系统中大量使用DLL的理由呢？ <br><br>　　①扩展应用程序 <br><br>　　由于DLL能被应用程序动态载入内存。所以，应用程序可以在需要时才将DLL载入到内存中，这让程序的可维护性变得很高。比如QQ的视频功能需要升级，那么负责编写QQ的程序员不必将QQ所有代码都重写，只需将视频功能相关的DLL文件重写即可。 <br><br>　　②便于程序员合作 <br><br>　　这个和我们最终用户关系不大，仅供了解。我们都知道编程工具有很多，比如VB、VC、Delphi等，如果好几个人合作来编写一个大的程序，那么可能有的人用VB，有的人用VC，每人负责的部分所使用的编程语言都不同，究竟放在哪个编译器中进行编译呢？这就好比一群来自各个国家的人在共同编写一篇文章，如果他们所使用的语言都不同，写出来的文章怎么可能凑到一起呢？而有了DLL后，可以让VC程序员写一个DLL，然后VB程序员在程序中调用，无需为怎么将它们都编译为一个单独的EXE而发愁了。 <br><br>　　③节省内存 <br><br>　　如果多个应用程序调用的是同一个动态链接库，那么这个DLL文件不会被重复多次装入内存中，而是由这些应用程序共享同一个已载入内存的DLL。就好比一个办公室中，很少会为每一个员工配置一台饮水机的，而是在一个公共位置放上一个饮水机，所有需要喝水的职员都可以共用这台饮水机，降低了成本又节约了空间。 <br><br>　　④共享程序资源 <br><br>　　包括刚才提到过的通用文件对话框在内，DLL文件提供了应用程序间共享资源的可能。资源可以是程序对话框、字符串、图标，或者声音文件等。 <br><br>　　⑤解决应用程序本地化问题 <br><br>　　在下载了某个程序的汉化包后，打开汉化说明，经常可以看到用下载包中的DLL文件覆盖掉程序原来的DLL，汉化就完成了。这些程序都是将执行代码和应用程序界面分开编写了，所以汉化者只需简单地将其中和程序界面相关的DLL汉化并发布即可。 <br><br><strong>求知若渴:探究DLL的真相</strong> <br>　　谁知道DLL里究竟有多少函数，又有谁知道EXE调用了哪个DLL的哪些函数？其实，这个问题并不难解决。还记不记得本刊2004年第6期的《无间盗IV——盗亦有盗》中介绍的分析EXE文件的工具Dependency Walker(以下简称Depends)今天我们要用它当探险工具，把DLL真相探个通通透透。 <br>　　<strong>1.看看DLL里有多少函数</strong> <br>　　第一步:下载并解压Depends，运行其中的depends.exe，然后选择菜单“File→Open”(文件→打开)，在文件选择框中选中需要分析的DLL文件并打开，此处选择QQ目录下的QQZip.dll。 <br>　　第二步:在程序左侧的树状栏中就列出了这个DLL使用了哪些其他DLL的功能函数(原来DLL中还可以调用其他DLL^O^)，而右侧的两个分栏列表分别显示了函数输入及输出表，函数输出表即为该DLL提供给其他EXE或者DLL调用的函数的总列表。 <br>　　第三步:函数输出表的Function栏中即为输出函数的名称（见图1），在QQZip.dll中共发现了2个函数:Unzip、Zip。因此可以判断该DLL在QQ程序中负责压缩和解压缩的任务。 <br><img src="http://os.yesky.com/imagelist/06/30/wgw719nb9564.jpg" alt="" border="0"><br>　　<strong>2.审审EXE究竟用了哪个DLL</strong> <br>　　还是拿QQ来作为例子，在Depends中打开QQ.exe，这时界面左侧的树状列表中显示的就是QQ.exe调用的DLL列表（见图2），如果展开这些DLL分支，还会发现其他的DLL，这就说明QQ调用的这些DLL文件还有可能(几乎是肯定)再调用别的DLL。这就好比买了一台新的DVD机，可能其中用的机芯是SONY的，而这个机芯里的一个小电容又有可能是别的公司的，这是同样的道理。 <br><img src="http://os.yesky.com/imagelist/06/30/irlsxx38g5d2.jpg" alt="" border="0"><br><br><strong>3.用DLL看穿EXE真面目</strong> <br>　　刚才得到了QQ.exe所使用的DLL列表，其实通过这个列表，还能分析出很多别的信息。比如其中包含MFC42.dll，所以可以判断QQ.exe是采用VC(即Visual C++)编写的，而包含WSOCK32.dll则说明这个程序带有网络通讯功能(废话！QQ如果不能网络通讯还有什么用……)。以下是一个简表，大家在分析别的EXE时可以根据其所使用的DLL来对其功能进行初步判断。 <br>　　DLL文件名 可以判断出的EXE信息 <br>　　MFC42.dll 使用VC5.0/6.0编写。 <br>　　VBRun*.dll “*”代表数字版本号，使用VB3.0/4.0编写。 <br>　　MSVBVM50.dll 使用VB5.0编写，在Windows 98(SE)上自带该DLL。 <br>　　MSVBVM60.dll 使用VB6.0编写，在Windows Me/2000/XP等系统上自带该DLL。 <br>　　ADVAPI32.dll 可能会进行注册表操作。 <br>　　WSOCK32.dll 具备网络通讯功能。 <br>　　WS2_32.dll 具备网络通讯功能。 <br>　　WININET.dll 具备HTTP浏览、下载等功能，典型的例子是浏览器、下载工具。 <br>　　WINMM.dll 具备多媒体播放能力。 <br>　　DDRAW.dll 游戏、高级图像处理工具。 <br>　　D3D*.dll 3D游戏，或者动画处理工具。 <br>　　<strong>4.DLL是个大宝库</strong> <br>　　除供应用程序调用函数的DLL外，还有另一种用来保存资源的DLL，比如QQ目录下的QQRes.dll，用Depends打开后发现没有任何输出函数，难道是一个鸡肋DLL？可是改用资源工具Resource Hacker(下载地址:<a rel="external" href="http://www.mydown.com/soft/42/42058.html" target="_blank">http://www.mydown.com/soft/42/42058.html</a>)打开这个DLL后，就发现原来其中保存了这么多QQ的资源，包括图标、音乐、图片、字符串、对话框……（见图3） <br><img src="http://os.yesky.com/imagelist/06/30/3t620yhqyh7t.jpg" alt="" border="0"><br><br><strong>刨根问底:DLL的寓言</strong> <br>　　DLL引起的故障是很常见的，为什么会引起故障？遇到故障怎么解决？嘘～偷听一下DLL的对话，你就会明白了。 <br>　　<strong>1.从搬运工谈接口兼容性</strong> <br>　　在Windows工地上，有一个名叫EXE的包工头，他手下有很多称为DLL的建筑工人。其中有一个专门负责搬运的DLL(暂且称为“搬运工A”)，每次需要搬运水泥时，包工头EXE都只要对他喊一声:“来！搬。” <br>　　过了一段时间，搬运工A觉得自己的效率太低，于是从原来的每次搬1袋水泥改成了每次搬3袋水泥。改进了搬运方法后，EXE包工头仍然每次只是喊一声:“来！搬。”却不知搬运工A已经改变了搬运的方法。 <br>　　但又过了一段时间，包工头EXE把搬运工A给辞退了，从别的工地上找来了另一个DLL(暂且称为“搬运工B”)。这个搬运工在别的工地的时候，搬运东西特别快，所以包工头EXE决定把搬运工作给“升级”一下。但真正开始工作时，包工头才发现出了问题……现在不管叫几遍“来！搬。”这个新来的搬运工B都不知道究竟应该搬什么。 <br>　　上面的例子中，搬运工A改进搬运方法，但EXE调用它的方法仍不变，这就是DLL升级的原理，改进了内部的实现方法，但调用接口不变，这样EXE文件不用跟着升级，就能调用新版本的DLL了。而搬运工B的故事告诉我们，不管新版本的DLL效率多高，如果接口(可以理解为DLL中输出的函数名)与原来的不一致，那么EXE就不知道也无法调用它了。 <br>　　<strong>2.登记身份证的DLL</strong> <br>　　在系统故障中，有很多都是由于DLL文件没有注册造成的，比如Windows XP的压缩文件夹功能出现故障就很有可能是系统目录中的zipfldr.dll没有注册造成的，这类故障的解决方法也大多是运行如下命令: <br>　　<strong>regsvr32 DLL文件名</strong> <br>　　很多人不理解为什么要这么做，是不是所有的DLL都能这样做呢？ <br>　　其实系统中有两种DLL，一种是不需注册即可使用的，另一种则是必须经过系统登录(即注册)才能使用的。就好像一个临时工，和一个记录在员工名单上的长期合同工的区别一样。如何才能区分这两种DLL呢？方法很简单，用刚才的Depends打开这个DLL，同样是看函数输出表，如果其中包含以下两个函数(前者是注册DLL，后者是反注册DLL)，那么就一定是需要注册才能使用的DLL了。 <br>　　DllRegisterServer <br>　　DllUnregisterServer <br>　　而regsvr32这个命令，实际上就是调用DLL中的这两个函数(“regsvr32 /u DLL文件名”调用的即为DllUnregisterServer反注册函数)。 <br>　　<strong>3.插件DLL的秘密</strong> <br>　　Winamp、Foobar 2000等很多软件都具有插件功能，从网上下载一个DLL放在插件目录下就能让程序支持新的功能，这是怎么做到的呢？就拿时下流行的播放软件“千千静听”来举例吧。 <br>　　“千千静听”的插件目录在该软件安装目录下的Addin子目录下，程序的插件目录一般都会以“Plugins”、“Addin”来命名。在“千千静听”的插件目录中有许多DLL文件，比如tt_asf.dll、tt_rm.dll等，从文件名中就能看出这些DLL是用来让这个播放器支持各种不同类型的音频文件的。同样，用Depends打开这些文件，你就会发现这些文件的输出函数表中都包括一个同样的函数:ttpGetSoundAddIn（见图4）。 <br><img src="http://os.yesky.com/imagelist/06/30/7y97227vumxl.jpg" alt="" border="0"><br>　　这就是插件的秘密，各种支持插件功能的程序在发布时，都会同时发布一份插件协议，协议中规定了该程序将要调用的插件DLL中必须包含的函数名称及相关的参数规则，然后第三方的插件程序员在编写这个程序的插件时就根据这个插件的标准来编写DLL的输出函数。 <br>　　①对于插件tt_asf.dll <br>　　ttplayer.exe(“千千静听”主程序)对tt_asf.dll说:“我要调用你的ttpGetSoundAddIn函数！” <br>　　tt_asf.dll回答:“OK。” <br>　　②如果把不相关的DLL放进AddIn目录 <br>　　ttplayer.exe对未知DLL说:“我要调用你的ttpGetSoundAddIn函数！” <br>　　tt_asf.dll回答:“那是什么函数？从来没听说过！”</p>   
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+
+
+
+<div class="bdsharebuttonbox tracking-ad bdshare-button-style0-16" style="float: right;" data-mod="popu_172" data-bd-bind="1486998656354">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important" target="_blank"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="background-position:0 -52px !important" target="_blank"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="background-position:0 -104px !important" target="_blank"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博" style="background-position:0 -260px !important" target="_blank"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网" style="background-position:0 -208px !important" target="_blank"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信" style="background-position:0 -1612px !important" target="_blank"></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+   <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css">
+
+    
+<!--172.16.140.13-->
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=413056"></script>
+
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+ 
+
+
+        <div id="digg" articleid="5426848">
+            <dl id="btnDigg" class="digg digg_enable" onclick="btndigga();">
+               
+                 <dt>顶</dt>
+                <dd>10</dd>
+            </dl>
+           
+              
+            <dl id="btnBury" class="digg digg_enable" onclick="btnburya();">
+              
+                  <dt>踩</dt>
+                <dd>0</dd>               
+            </dl>
+            
+        </div>
+     <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);" target="_blank">&nbsp;</a>   </div>
+    <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);" target="_blank">&nbsp;</a></div>
+    <script type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </script>
+
+   <ul class="article_next_prev">
+                <li class="prev_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/swort_177/article/details/5426792';">上一篇</span><a href="/swort_177/article/details/5426792" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian'])">近期的一些小的知识点</a></li>
+                <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/swort_177/article/details/5591872';">下一篇</span><a href="/swort_177/article/details/5591872" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">.net程序在无.net环境下运行</a></li>
+    </ul>
+
+    <div style="clear:both; height:10px;"></div>
+
+
+        <div class="similar_article" style="">
+                <h4>我的同类文章</h4>
+                <div class="similar_c" style="margin:20px 0px 0px 0px">
+                    <div class="similar_c_t">
+                                <label class="similar_cur">
+                                    <span style="cursor:pointer" onclick="GetCategoryArticles('514645','swort_177','foot','5426848');">基本常识<em>（45）</em></span>
+                                </label>
+                    </div>
+                   
+                    <div class="similar_wrap tracking-ad" data-mod="popu_141" style="max-height:195px;">
+                        <a href="http://blog.csdn.net" style="display:none" target="_blank">http://blog.csdn.net</a>
+                        <ul class="similar_list fl"><li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/5193854" id="foot_aritcle_5193854undefined3992698887030547" target="_blank" title="bluetooth  外围设备 驱动有问题 解决办法">bluetooth  外围设备 驱动有问题 解决办法</a><span>2010-01-15</span><label><i>阅读</i><b>18009</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/5181843" id="foot_aritcle_5181843undefined36802267567485936" target="_blank" title="什么是SLIC">什么是SLIC</a><span>2010-01-12</span><label><i>阅读</i><b>491</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/5156948" id="foot_aritcle_5156948undefined13532948119032384" target="_blank" title="手机证书的一些知识">手机证书的一些知识</a><span>2010-01-08</span><label><i>阅读</i><b>564</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/4964041" id="foot_aritcle_4964041undefined442891909113445" target="_blank" title="nokia手机的含义">nokia手机的含义</a><span>2009-12-08</span><label><i>阅读</i><b>461</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/4775748" id="foot_aritcle_4775748undefined9341790610438683" target="_blank" title="ASX的播放列表格式">ASX的播放列表格式</a><span>2009-11-06</span><label><i>阅读</i><b>1218</b></label></li> </ul>
+
+                        <ul class="similar_list fr"><li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/5192340" id="foot_aritcle_5192340undefined41536373686895556" target="_blank" title="5800 闹钟延迟问题解决">5800 闹钟延迟问题解决</a><span>2010-01-15</span><label><i>阅读</i><b>1592</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/5174986" id="foot_aritcle_5174986undefined5304973205778061" target="_blank" title="R400 A48的操作系统相关">R400 A48的操作系统相关</a><span>2010-01-11</span><label><i>阅读</i><b>612</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/4969734" id="foot_aritcle_4969734undefined6784704645906797" target="_blank" title="NOKIA手机的一些代码">NOKIA手机的一些代码</a><span>2009-12-09</span><label><i>阅读</i><b>500</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/4807401" id="foot_aritcle_4807401undefined9869216089838982" target="_blank" title="CDN技术简介">CDN技术简介</a><span>2009-11-13</span><label><i>阅读</i><b>442</b></label></li> <li><em>•</em><a href="http://blog.csdn.net/swort_177/article/details/4775496" id="foot_aritcle_4775496undefined4601375584796725" target="_blank" title="音乐分享网站last.fm的一些摘要">音乐分享网站last.fm的一些摘要</a><span>2009-11-06</span><label><i>阅读</i><b>670</b></label></li> </ul>
+                    <a href="http://blog.csdn.net/swort_177/article/category/514645" class="MoreArticle">更多文章</a></div>
+                </div>
+            </div>    
+    <script type="text/javascript">
+        $(function () {
+            GetCategoryArticles('514645', 'swort_177','foot','5426848');
+        });
+    </script>
+      
+</div>
+
+    <div>
+            <script type="text/javascript">
+                /*博客内容页下方Banner1-728*90，创建于2016-12-13*/
+                var cpro_id = "u2843949";
+            </script>
+            <script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script><div id="BAIDU_SSP__wrapper_u2843949_0"><iframe id="iframeu2843949_0" src="http://pos.baidu.com/qclm?rdid=2843949&amp;dc=3&amp;di=u2843949&amp;dri=0&amp;dis=0&amp;dai=1&amp;ps=5847x297&amp;dcb=___adblockplus&amp;dtm=HTML_POST&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1486998635305&amp;ti=Dependency%20Walker%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%20-%20swort_177%E7%9A%84%E4%B8%93%E6%A0%8F%20-%20%E5%8D%9A%E5%AE%A2%E9%A2%91%E9%81%93%20-%20CSDN.NET&amp;ari=2&amp;dbv=0&amp;drs=1&amp;pcs=1133x580&amp;pss=1133x5865&amp;cfv=24&amp;cpl=1&amp;chi=1&amp;cce=true&amp;cec=UTF-8&amp;tlm=1486998635&amp;rw=580&amp;ltu=http%3A%2F%2Fblog.csdn.net%2Fswort_177%2Farticle%2Fdetails%2F5426848&amp;ltr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DMo135LFYffLfLkeRviVt8EF1F9CFLl9-8NIkhpkaGBcbLnu_pOpYH2FqeV3u5QtcqIGE-XSFccISLS-s6fUNTa%26wd%3D%26eqid%3D9d2cc14d000448290000000458a1c9fe&amp;ecd=1&amp;par=1366x728&amp;pis=-1x-1&amp;ccd=24&amp;cja=false&amp;cmi=2&amp;col=zh-CN&amp;cdo=-1&amp;sr=1366x768&amp;tcn=1486998635&amp;qn=1192273debd25f64&amp;tt=1486998635109.204.204.208" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true" width="728" align="center,center" height="90" frameborder="0"></iframe></div>
+     </div>
+
+<div id="suggest">
+
+</div>
+         <script language="javascript" type="text/javascript">     
+             $(function(){
+                 $.get("/swort_177/svc/GetSuggestContent/5426848",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </script>  
+
+
+<style>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*修改行*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</style>
+
+ <link rel="stylesheet" href="http://static.blog.csdn.net/css/replace.css">
+
+<div id="relate" data-mod="popu_218" class="tracking-ad" style="display: block;">
+        <div class="relate_t">
+            <h3><span>参考知识库</span></h3>
+        </div>
+        <div class="relate_c"><dl class="relate_list"><dt><a target="_blank" href="http://lib.csdn.net/base/operatingsystem"><img src="http://img.knowledge.csdn.net/upload/base/1464938192555_555.jpg" alt="img"></a></dt><dd><h4><a target="_blank" href="http://lib.csdn.net/base/operatingsystem">操作系统知识库</a></h4><p><label><span>4958</span><em>关注</em><i>|</i><span>2210</span><em>收录</em></label></p></dd></dl></div>
+</div>
+ 
+
+<dl class="blog-ass-articl" id="res-relatived"> 
+    <div class="embody embody_b" id="libkeyparent" style="display:none">
+            <span class="embody_t">更多资料请参考：</span>
+            <div class="embody_c" id="libkey"></div>
+    </div>
+
+
+     <dt><span>猜你在找</span></dt>    
+
+
+   
+
+
+    <div id="adCollege" style="width: 42%;float: left;"> 
+        <script src="http://csdnimg.cn/jobreco/job_reco.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "5426848",
+                username: "chengdong0421",
+                recordcount: "5",
+                containerId: "adCollege" //容器DIV的id。 
+            });
+        </script> 
+    <div class="tracking-ad" data-mod="popu_84"><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/2236" title="windows server 2008 r2服务器操作系统" strategy="v4:content" target="_blank">windows server 2008 r2服务器操作系统</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/3067" title="Windows系统内核-保护模式" strategy="v4:content" target="_blank">Windows系统内核-保护模式</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/2006" title="excel VBA编程番外篇（字典+正则表达式+FSO）" strategy="v4:content" target="_blank">excel VBA编程番外篇（字典+正则表达式+FSO）</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/3516" title="VC++DLL动态链接库编程" strategy="v4:content" target="_blank">VC++DLL动态链接库编程</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px; white-space: nowrap;"><a href="http://edu.csdn.net/course/detail/3967" title="WB3 Windows启动解惑" strategy="v4:content" target="_blank">WB3 Windows启动解惑</a></dd></div></div>  
+
+    
+     <div id="res" data-mod="popu_36" class="tracking-ad" style="width: 42%; float: left; margin-right: 30px; display: block;"><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/linhanshi/article/details/1532744" title="Dependency Walker 22 " strategy="SearchAlgorithm" target="_blank">Dependency Walker 22 </a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/everettjf/article/details/8470597" title="Dependency Walker reports IESHIMSDLL and WERDLL missing" strategy="SearchAlgorithm" target="_blank">Dependency Walker reports IESHIMSDLL and WERDLL missing</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/felomeng/article/details/7171916" title="解决Windows下依赖问题的利器Dependency Walker" strategy="SearchAlgorithm" target="_blank">解决Windows下依赖问题的利器Dependency Walker</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/solaris_navi/article/details/7552001" title="Dependency Walker" strategy="SearchAlgorithm" target="_blank">Dependency Walker</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/linhanshi/article/details/2071109" title="Dependency Walker 22" strategy="SearchAlgorithm" target="_blank">Dependency Walker 22</a></dd></div>
+   
+</dl>
+
+
+<script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = 'Dependency Walker使用说明' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </script>  
+
+
+    <div id="ad_cen">        
+                    <script type="text/javascript">
+                        /*博客内容页下方Banner-728*90，创建于2014-7-3*/
+                        var cpro_id = "u1607657";
+                    </script>
+                    <script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script><div id="BAIDU_SSP__wrapper_u1607657_0"><iframe id="iframeu1607657_0" src="http://pos.baidu.com/qclm?rdid=1607657&amp;dc=3&amp;di=u1607657&amp;dri=0&amp;dis=0&amp;dai=2&amp;ps=6144x297&amp;dcb=___adblockplus&amp;dtm=HTML_POST&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1486998635305&amp;ti=Dependency%20Walker%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%20-%20swort_177%E7%9A%84%E4%B8%93%E6%A0%8F%20-%20%E5%8D%9A%E5%AE%A2%E9%A2%91%E9%81%93%20-%20CSDN.NET&amp;ari=2&amp;dbv=0&amp;drs=1&amp;pcs=1133x580&amp;pss=1133x6162&amp;cfv=24&amp;cpl=1&amp;chi=1&amp;cce=true&amp;cec=UTF-8&amp;tlm=1486998640&amp;rw=580&amp;ltu=http%3A%2F%2Fblog.csdn.net%2Fswort_177%2Farticle%2Fdetails%2F5426848&amp;ltr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DMo135LFYffLfLkeRviVt8EF1F9CFLl9-8NIkhpkaGBcbLnu_pOpYH2FqeV3u5QtcqIGE-XSFccISLS-s6fUNTa%26wd%3D%26eqid%3D9d2cc14d000448290000000458a1c9fe&amp;ecd=1&amp;par=1366x728&amp;pis=-1x-1&amp;ccd=24&amp;cja=false&amp;cmi=2&amp;col=zh-CN&amp;cdo=-1&amp;sr=1366x768&amp;tcn=1486998641&amp;qn=f01fdedab0348343&amp;tt=1486998635109.5779.5780.5781" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true" width="728" align="center,center" height="90" frameborder="0"></iframe></div>
+    </div>  
+
+
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list"><dl class="comment_item comment_topic" id="comment_item_5975666"><dt class="comment_head" floor="21">21楼 <span class="user"><a class="username" href="/u010839382" target="_blank">xiaoluo91</a> <span class="ptime">2016-04-08 23:04发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="5975666" username="u010839382"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/u010839382" target="_blank"><img src="http://avatar.csdn.net/1/7/E/3_u010839382.jpg" width="40" height="40"></a></dd><dd class="comment_body">这个工具很好</dd></dl><dl class="comment_item comment_topic" id="comment_item_5834469"><dt class="comment_head" floor="20">20楼 <span class="user"><a class="username" href="/WinsenJiansbomber" target="_blank">Jimbo</a> <span class="ptime">2016-01-07 20:35发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="5834469" username="WinsenJiansbomber"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/WinsenJiansbomber" target="_blank"><img src="http://avatar.csdn.net/A/5/0/3_winsenjiansbomber.jpg" width="40" height="40"></a></dd><dd class="comment_body">好像很NB的样子，但是。。。。LoadLibrary方式加载的DLL似乎不能分析到</dd></dl><dl class="comment_item comment_topic" id="comment_item_5143821"><dt class="comment_head" floor="19">19楼 <span class="user"><a class="username" href="/qq_29043429" target="_blank">qq_29043429</a> <span class="ptime">2015-06-15 13:12发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="5143821" username="qq_29043429"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/qq_29043429" target="_blank"><img src="http://avatar.csdn.net/B/B/1/3_qq_29043429.jpg" width="40" height="40"></a></dd><dd class="comment_body">写的很好呀么QAQ 看到百度经验上有说 报错0xc000007b 可以用dependency walker 解决 可是还是没有懂啊啊啊&gt;_&lt;</dd></dl><dl class="comment_item comment_topic" id="comment_item_2835079"><dt class="comment_head" floor="18">18楼 <span class="user"><a class="username" href="/pinaster99" target="_blank">pinaster99</a> <span class="ptime">2013-08-18 15:33发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2835079" username="pinaster99"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/pinaster99" target="_blank"><img src="http://avatar.csdn.net/F/F/C/3_pinaster99.jpg" width="40" height="40"></a></dd><dd class="comment_body">我使用windows sp3 .最近我想查一下帮助，机器提示：“找不到 HelpCtr.exe 文件”。我下载了这个文件，但是注册不上去。搞不清楚是什么问题，猜想是有关 DLL 文件的事，能给解答一下吗？谢谢。</dd></dl><dl class="comment_item comment_topic" id="comment_item_2800277"><dt class="comment_head" floor="17">17楼 <span class="user"><a class="username" href="/hujunjie555" target="_blank">hujunjie555</a> <span class="ptime">2013-08-06 15:22发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2800277" username="hujunjie555"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/hujunjie555" target="_blank"><img src="http://avatar.csdn.net/7/9/4/3_hujunjie555.jpg" width="40" height="40"></a></dd><dd class="comment_body">很好的阐述，赞，收藏了</dd></dl><dl class="comment_item comment_topic" id="comment_item_2642923"><dt class="comment_head" floor="16">16楼 <span class="user"><a class="username" href="/joythink89" target="_blank">joythink89</a> <span class="ptime">2013-05-27 16:18发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2642923" username="joythink89"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/joythink89" target="_blank"><img src="http://avatar.csdn.net/3/D/E/3_joythink89.jpg" width="40" height="40"></a></dd><dd class="comment_body">很好，谢谢。</dd></dl><dl class="comment_item comment_topic" id="comment_item_2430116"><dt class="comment_head" floor="15">15楼 <span class="user"><a class="username" href="/spn_gz" target="_blank">spn_gz</a> <span class="ptime">2012-11-12 15:58发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2430116" username="spn_gz"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/spn_gz" target="_blank"><img src="http://avatar.csdn.net/2/0/A/3_spn_gz.jpg" width="40" height="40"></a></dd><dd class="comment_body">学习了！收藏下来</dd></dl><dl class="comment_item comment_topic" id="comment_item_2358346"><dt class="comment_head" floor="14">14楼 <span class="user"><a class="username" href="/dongfa_dg" target="_blank">yiqiquwan</a> <span class="ptime">2012-08-31 16:41发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2358346" username="dongfa_dg"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/dongfa_dg" target="_blank"><img src="http://avatar.csdn.net/A/0/4/3_dongfa_dg.jpg" width="40" height="40"></a></dd><dd class="comment_body">:“那是什么函数？从来没听说过</dd></dl><dl class="comment_item comment_topic" id="comment_item_2336389"><dt class="comment_head" floor="13">13楼 <span class="user"><a class="username" href="/fengde122333" target="_blank">阳光陷阱</a> <span class="ptime">2012-08-14 14:22发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2336389" username="fengde122333"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/fengde122333" target="_blank"><img src="http://avatar.csdn.net/0/D/9/3_fengde122333.jpg" width="40" height="40"></a></dd><dd class="comment_body">鲜</dd></dl><dl class="comment_item comment_topic" id="comment_item_2336388"><dt class="comment_head" floor="12">12楼 <span class="user"><a class="username" href="/fengde122333" target="_blank">阳光陷阱</a> <span class="ptime">2012-08-14 14:22发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2336388" username="fengde122333"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/fengde122333" target="_blank"><img src="http://avatar.csdn.net/0/D/9/3_fengde122333.jpg" width="40" height="40"></a></dd><dd class="comment_body">花</dd></dl><dl class="comment_item comment_topic" id="comment_item_2291895"><dt class="comment_head" floor="11">11楼 <span class="user"><a class="username" href="/leoj23" target="_blank">leoj23</a> <span class="ptime">2012-07-20 10:01发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2291895" username="leoj23"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/leoj23" target="_blank"><img src="http://avatar.csdn.net/8/1/0/3_leoj23.jpg" width="40" height="40"></a></dd><dd class="comment_body">通俗易懂</dd></dl><dl class="comment_item comment_topic" id="comment_item_2215634"><dt class="comment_head" floor="10">10楼 <span class="user"><a class="username" href="/zlz1000" target="_blank">zlz1000</a> <span class="ptime">2012-05-14 21:25发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2215634" username="zlz1000"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/zlz1000" target="_blank"><img src="http://avatar.csdn.net/4/3/4/3_zlz1000.jpg" width="40" height="40"></a></dd><dd class="comment_body">恩，不错！</dd></dl><dl class="comment_item comment_topic" id="comment_item_2197932"><dt class="comment_head" floor="9">9楼 <span class="user"><a class="username" href="/delandi" target="_blank">风吹PP凉SS</a> <span class="ptime">2012-04-27 16:09发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="2197932" username="delandi"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/delandi" target="_blank"><img src="http://avatar.csdn.net/3/7/D/3_delandi.jpg" width="40" height="40"></a></dd><dd class="comment_body">写的很好，收藏了</dd></dl><dl class="comment_item comment_topic" id="comment_item_1948044"><dt class="comment_head" floor="8">8楼 <span class="user"><a class="username" href="/guozhixing" target="_blank">guozhixing</a> <span class="ptime">2011-09-05 13:49发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1948044" username="guozhixing"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/guozhixing" target="_blank"><img src="http://avatar.csdn.net/9/B/9/3_guozhixing.jpg" width="40" height="40"></a></dd><dd class="comment_body">niuren !</dd></dl><dl class="comment_item comment_topic" id="comment_item_1855045"><dt class="comment_head" floor="7">7楼 <span class="user"><a class="username" href="/narutojzm1" target="_blank">大势燎原</a> <span class="ptime">2011-07-26 23:08发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1855045" username="narutojzm1"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/narutojzm1" target="_blank"><img src="http://avatar.csdn.net/9/2/F/3_narutojzm1.jpg" width="40" height="40"></a></dd><dd class="comment_body">牛啊，太通俗易懂了，敬仰。。。</dd></dl><dl class="comment_item comment_topic" id="comment_item_1854368"><dt class="comment_head" floor="6">6楼 <span class="user"><a class="username" href="/hu330459076" target="_blank">hu330459076</a> <span class="ptime">2011-07-26 13:19发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1854368" username="hu330459076"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/hu330459076" target="_blank"><img src="http://avatar.csdn.net/F/0/1/3_hu330459076.jpg" width="40" height="40"></a></dd><dd class="comment_body">写的通俗易懂，很好</dd></dl><dl class="comment_item comment_topic" id="comment_item_1668460"><dt class="comment_head" floor="5">5楼 <span class="user"><a class="username" href="/MMloveyou1314" target="_blank">MMloveyou1314</a> <span class="ptime">2011-05-12 10:38发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1668460" username="MMloveyou1314"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/MMloveyou1314" target="_blank"><img src="http://avatar.csdn.net/C/9/F/3_mmloveyou1314.jpg" width="40" height="40"></a></dd><dd class="comment_body">Good...[e01]</dd></dl><dl class="comment_item comment_topic" id="comment_item_1651420"><dt class="comment_head" floor="4">4楼 <span class="user"><a class="username" href="/tt525519836" target="_blank">抱得美人</a> <span class="ptime">2011-04-23 19:28发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1651420" username="tt525519836"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/tt525519836" target="_blank"><img src="http://avatar.csdn.net/7/9/3/3_tt525519836.jpg" width="40" height="40"></a></dd><dd class="comment_body">[e01][e03]</dd></dl><dl class="comment_item comment_topic" id="comment_item_1406055"><dt class="comment_head" floor="3">3楼 <span class="user"><a class="username" href="/hireboy" target="_blank">hireboy</a> <span class="ptime">2010-06-04 14:48发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1406055" username="hireboy"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/hireboy" target="_blank"><img src="http://avatar.csdn.net/4/3/1/3_hireboy.jpg" width="40" height="40"></a></dd><dd class="comment_body">很不错，见识了一把</dd></dl><dl class="comment_item comment_topic" id="comment_item_1400592"><dt class="comment_head" floor="2">2楼 <span class="user"><a class="username" href="/suhouning" target="_blank">suhouning</a> <span class="ptime">2010-05-31 09:51发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1400592" username="suhouning"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/suhouning" target="_blank"><img src="http://avatar.csdn.net/6/B/6/3_suhouning.jpg" width="40" height="40"></a></dd><dd class="comment_body">好久没有看到那么形象的东西了！牛！</dd></dl><dl class="comment_item comment_topic" id="comment_item_1375996"><dt class="comment_head" floor="1">1楼 <span class="user"><a class="username" href="/匿名用户" target="_blank">匿名用户</a> <span class="ptime">2010-05-10 22:05发表</span>  <a href="#reply" class="cmt_btn reply" title="回复">[回复]</a> <span class="comment_manage" style="display:none;" commentid="1375996" username="匿名用户"> <a href="#quote" class="cmt_btn quote" title="引用">[引用]</a> <a href="#report" class="cmt_btn report" title="举报">[举报]</a></span></span></dt><dd class="comment_userface"><a href="/匿名用户" target="_blank"><img src="http://avatar.csdn.net/7/0/8/3_匿名用户.jpg" width="40" height="40"></a></dd><dd class="comment_body">[e03]</dd></dl><div class="clear"></div></div>
+    <div id="comment_bar" style="display: none;">
+    </div>
+    <div id="comment_form"><a name="commentbox"></a><a name="reply"></a><a name="quote"></a><form action="/swort_177/comment/submit?id=5426848" method="post" onsubmit="return subform(this);"><div class="commentform"><div class="panel_head">发表评论</div><ul><li class="left">用 户 名：</li><li class="right">chengdong0421</li></ul><ul><li class="left">评论内容：</li><li class="right" style="position:relative;"><div id="ubbtools"><a href="#insertcode" code="code"><img src="http://static.blog.csdn.net/images/ubb/code.gif" alt="插入代码" title="插入代码" border="0"></a></div><div id="lang_list" style="position: absolute; top: 28px; left: 0px; display: none;"><a class="long_name" href="#html">HTML/XML</a><a class="long_name" href="#objc">objective-c</a><a class="zhong_name" href="#delphi">Delphi</a><a class="zhong_name" href="#ruby">Ruby</a><a href="#php">PHP</a><a class="duan_name" href="#csharp">C#</a><a style=" border-right: none;" class="duan_name" href="#cpp">C++</a><a style=" border-bottom:none;" class="long_name" href="#javascript">JavaScript</a><a style=" border-bottom:none;" class="long_name" href="#vb">Visual Basic</a><a style=" border-bottom:none;" class="zhong_name" href="#python">Python</a><a style=" border-bottom:none;" class="zhong_name" href="#java">Java</a><a style="border-bottom:none;" class="duan_name" href="#css">CSS</a><a style="border-bottom:none;" class="duan_name" href="#sql">SQL</a><a style="border:none;" class="duan_name" href="#plain">其它</a></div><textarea class="comment_content" name="comment_content" id="comment_content" style="width: 400px; height: 200px;"></textarea></li></ul><ul><input id="comment_replyId" name="comment_replyId" type="hidden"><input id="comment_userId" name="comment_userId" value="521203" type="hidden"><input id="commentId" name="commentId" value="" type="hidden"><input class="comment_btn" value="提交" type="submit">&nbsp;&nbsp;<span id="tip_comment" style="color: Red; display: none;"></span></ul></div></form></div>
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '5426848';
+    var commentscount = 22;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+<div id="report_dialog">
+</div>
+
+<div id="d-top" style="bottom:60px;">
+
+        <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="http://static.blog.csdn.net/images/blog-icon-reply.png" alt="快速回复">
+        </a>    
+    <a id="d-top-a" class="btn btn-top backtop" style="display: none;" title="返回顶部" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])">         
+         <img src="http://static.blog.csdn.net/images/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="tag_list" style="">
+
+    <h5>
+        <a href="http://www.csdn.net/tag/" target="_blank">核心技术类目</a></h5>
+    <div class="classify">
+<a title="全部主题" href="http://www.csdn.net/tag" target="_blank" onclick="LogClickCount(this,336);">全部主题</a>
+<a title="Hadoop" href="http://g.csdn.net/5272865" target="_blank" onclick="LogClickCount(this,336);">Hadoop</a>
+<a title="AWS" href="http://g.csdn.net/5272866" target="_blank" onclick="LogClickCount(this,336);">AWS</a>
+<a title="移动游戏" href="http://g.csdn.net/5272870" target="_blank" onclick="LogClickCount(this,336);">移动游戏</a>
+<a title="Java" href="http://g.csdn.net/5272871" target="_blank" onclick="LogClickCount(this,336);">Java</a>
+<a title="Android" href="http://g.csdn.net/5272872" target="_blank" onclick="LogClickCount(this,336);">Android</a>
+<a title="iOS" href="http://g.csdn.net/5272873" target="_blank" onclick="LogClickCount(this,336);">iOS</a>
+<a title="Swift" href="http://g.csdn.net/5272868" target="_blank" onclick="LogClickCount(this,336);">Swift</a>
+<a title="智能硬件" href="http://g.csdn.net/5272869" target="_blank" onclick="LogClickCount(this,336);">智能硬件</a>
+<a title="Docker" href="http://g.csdn.net/5272867" target="_blank" onclick="LogClickCount(this,336);">Docker</a>
+<a title="OpenStack" href="http://g.csdn.net/5272925" target="_blank" onclick="LogClickCount(this,336);">OpenStack</a>
+<a title="VPN" href="http://www.csdn.net/tag/vpn" target="_blank" onclick="LogClickCount(this,336);">VPN</a>
+<a title="Spark" href="http://g.csdn.net/5272924" target="_blank" onclick="LogClickCount(this,336);">Spark</a>
+<a title="ERP" href="http://www.csdn.net/tag/erp" target="_blank" onclick="LogClickCount(this,336);">ERP</a>
+<a title="IE10" href="http://www.csdn.net/tag/ie10" target="_blank" onclick="LogClickCount(this,336);">IE10</a>
+<a title="Eclipse" href="http://www.csdn.net/tag/eclipse" target="_blank" onclick="LogClickCount(this,336);">Eclipse</a>
+<a title="CRM" href="http://www.csdn.net/tag/crm" target="_blank" onclick="LogClickCount(this,336);">CRM</a>
+<a title="JavaScript" href="http://www.csdn.net/tag/javascript" target="_blank" onclick="LogClickCount(this,336);">JavaScript</a>
+<a title="数据库" href="http://www.csdn.net/tag/数据库" target="_blank" onclick="LogClickCount(this,336);">数据库</a>
+<a title="Ubuntu" href="http://www.csdn.net/tag/ubuntu" target="_blank" onclick="LogClickCount(this,336);">Ubuntu</a>
+<a title="NFC" href="http://www.csdn.net/tag/nfc" target="_blank" onclick="LogClickCount(this,336);">NFC</a>
+<a title="WAP" href="http://www.csdn.net/tag/wap" target="_blank" onclick="LogClickCount(this,336);">WAP</a>
+<a title="jQuery" href="http://www.csdn.net/tag/jquery" target="_blank" onclick="LogClickCount(this,336);">jQuery</a>
+<a title="BI" href="http://www.csdn.net/tag/bi" target="_blank" onclick="LogClickCount(this,336);">BI</a>
+<a title="HTML5" href="http://www.csdn.net/tag/html5" target="_blank" onclick="LogClickCount(this,336);">HTML5</a>
+<a title="Spring" href="http://www.csdn.net/tag/spring" target="_blank" onclick="LogClickCount(this,336);">Spring</a>
+<a title="Apache" href="http://www.csdn.net/tag/apache" target="_blank" onclick="LogClickCount(this,336);">Apache</a>
+<a title=".NET" href="http://www.csdn.net/tag/.net" target="_blank" onclick="LogClickCount(this,336);">.NET</a>
+<a title="API" href="http://www.csdn.net/tag/api" target="_blank" onclick="LogClickCount(this,336);">API</a>
+<a title="HTML" href="http://www.csdn.net/tag/html" target="_blank" onclick="LogClickCount(this,336);">HTML</a>
+<a title="SDK" href="http://www.csdn.net/tag/sdk" target="_blank" onclick="LogClickCount(this,336);">SDK</a>
+<a title="IIS" href="http://www.csdn.net/tag/iis" target="_blank" onclick="LogClickCount(this,336);">IIS</a>
+<a title="Fedora" href="http://www.csdn.net/tag/fedora" target="_blank" onclick="LogClickCount(this,336);">Fedora</a>
+<a title="XML" href="http://www.csdn.net/tag/xml" target="_blank" onclick="LogClickCount(this,336);">XML</a>
+<a title="LBS" href="http://www.csdn.net/tag/lbs" target="_blank" onclick="LogClickCount(this,336);">LBS</a>
+<a title="Unity" href="http://www.csdn.net/tag/unity" target="_blank" onclick="LogClickCount(this,336);">Unity</a>
+<a title="Splashtop" href="http://www.csdn.net/tag/splashtop" target="_blank" onclick="LogClickCount(this,336);">Splashtop</a>
+<a title="UML" href="http://www.csdn.net/tag/uml" target="_blank" onclick="LogClickCount(this,336);">UML</a>
+<a title="components" href="http://www.csdn.net/tag/components" target="_blank" onclick="LogClickCount(this,336);">components</a>
+<a title="Windows Mobile" href="http://www.csdn.net/tag/windowsmobile" target="_blank" onclick="LogClickCount(this,336);">Windows Mobile</a>
+<a title="Rails" href="http://www.csdn.net/tag/rails" target="_blank" onclick="LogClickCount(this,336);">Rails</a>
+<a title="QEMU" href="http://www.csdn.net/tag/qemu" target="_blank" onclick="LogClickCount(this,336);">QEMU</a>
+<a title="KDE" href="http://www.csdn.net/tag/kde" target="_blank" onclick="LogClickCount(this,336);">KDE</a>
+<a title="Cassandra" href="http://www.csdn.net/tag/cassandra" target="_blank" onclick="LogClickCount(this,336);">Cassandra</a>
+<a title="CloudStack" href="http://www.csdn.net/tag/cloudstack" target="_blank" onclick="LogClickCount(this,336);">CloudStack</a>
+<a title="FTC" href="http://www.csdn.net/tag/ftc" target="_blank" onclick="LogClickCount(this,336);">FTC</a>
+<a title="coremail" href="http://www.csdn.net/tag/coremail" target="_blank" onclick="LogClickCount(this,336);">coremail</a>
+<a title="OPhone " href="http://www.csdn.net/tag/ophone " target="_blank" onclick="LogClickCount(this,336);">OPhone </a>
+<a title="CouchBase" href="http://www.csdn.net/tag/couchbase" target="_blank" onclick="LogClickCount(this,336);">CouchBase</a>
+<a title="云计算" href="http://www.csdn.net/tag/云计算" target="_blank" onclick="LogClickCount(this,336);">云计算</a>
+<a title="iOS6" href="http://www.csdn.net/tag/iOS6" target="_blank" onclick="LogClickCount(this,336);">iOS6</a>
+<a title="Rackspace " href="http://www.csdn.net/tag/rackspace " target="_blank" onclick="LogClickCount(this,336);">Rackspace </a>
+<a title="Web App" href="http://www.csdn.net/tag/webapp" target="_blank" onclick="LogClickCount(this,336);">Web App</a>
+<a title="SpringSide" href="http://www.csdn.net/tag/springside" target="_blank" onclick="LogClickCount(this,336);">SpringSide</a>
+<a title="Maemo" href="http://www.csdn.net/tag/maemo" target="_blank" onclick="LogClickCount(this,336);">Maemo</a>
+<a title="Compuware" href="http://www.csdn.net/tag/compuware" target="_blank" onclick="LogClickCount(this,336);">Compuware</a>
+<a title="大数据" href="http://www.csdn.net/tag/大数据" target="_blank" onclick="LogClickCount(this,336);">大数据</a>
+<a title="aptech" href="http://www.csdn.net/tag/aptech" target="_blank" onclick="LogClickCount(this,336);">aptech</a>
+<a title="Perl" href="http://www.csdn.net/tag/perl" target="_blank" onclick="LogClickCount(this,336);">Perl</a>
+<a title="Tornado" href="http://www.csdn.net/tag/tornado" target="_blank" onclick="LogClickCount(this,336);">Tornado</a>
+<a title="Ruby" href="http://www.csdn.net/tag/ruby" target="_blank" onclick="LogClickCount(this,336);">Ruby</a>
+<a title="Hibernate" href="http://www.csdn.net/hibernate" target="_blank" onclick="LogClickCount(this,336);">Hibernate</a>
+<a title="ThinkPHP" href="http://www.csdn.net/tag/thinkphp" target="_blank" onclick="LogClickCount(this,336);">ThinkPHP</a>
+<a title="HBase" href="http://www.csdn.net/tag/hbase" target="_blank" onclick="LogClickCount(this,336);">HBase</a>
+<a title="Pure" href="http://www.csdn.net/tag/pure" target="_blank" onclick="LogClickCount(this,336);">Pure</a>
+<a title="Solr" href="http://www.csdn.net/tag/solr" target="_blank" onclick="LogClickCount(this,336);">Solr</a>
+<a title="Angular" href="http://www.csdn.net/tag/angular" target="_blank" onclick="LogClickCount(this,336);">Angular</a>
+<a title="Cloud Foundry" href="http://www.csdn.net/tag/cloudfoundry" target="_blank" onclick="LogClickCount(this,336);">Cloud Foundry</a>
+<a title="Redis" href="http://www.csdn.net/tag/redis" target="_blank" onclick="LogClickCount(this,336);">Redis</a>
+<a title="Scala" href="http://www.csdn.net/tag/scala" target="_blank" onclick="LogClickCount(this,336);">Scala</a>
+<a title="Django" href="http://www.csdn.net/tag/django" target="_blank" onclick="LogClickCount(this,336);">Django</a>
+<a title="Bootstrap" href="http://www.csdn.net/tag/bootstrap" target="_blank" onclick="LogClickCount(this,336);">Bootstrap</a>
+    </div>
+
+</div>
+  <script language="javascript" type="text/javascript">     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/swort_177/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </script> 
+
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</script>
+ <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/async_new.js"></script>      
+
+
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            
