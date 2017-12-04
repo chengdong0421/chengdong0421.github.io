@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">  
+<title>萤石云直播列表</title>
+<script type="text/javascript">
+
+function query(){
+
+	//清空页面
+	var t = document.getElementById("table");
+	while(t.hasChildNodes()){
+		t.removeChild(t.childNodes[0]);
+	}
+	var pl = document.getElementById("playList");
+	while(pl.hasChildNodes()){
+		pl.removeChild(pl.childNodes[0]);
+	}
+
+	var url = "http://square.ys7.com/square/demoCameraApplyAction!queryShareCamera.action?cameraId=" + document.getElementById("camId").value;
+	document.getElementById("p1").innerHTML = "开始查询...";
+	//创建XMLHttpRequest对象
+	var xhr = new XMLHttpRequest();
+	//打开连接
+	xhr.open("GET",url,true);
+	//设置回调函数
+	xhr.onreadystatechange=function(){
+		//判断是否发送成功和判断服务器响应是否正确
+		if(4 == xhr.readyState && 200 == xhr.status){
+			var res = xhr.responseText;
+			//document.getElementById("p3").innerHTML = "响应文本:" + xhr.responseText;
+			var len = res.length;
+			var jsonStr = res.substring(res.indexOf("(")+1,len-1);
+
+			//document.getElementById("p3").innerHTML = jsonStr;
+                                 var jsonObj = eval("("+jsonStr+")");
+			//相机数组
+                                 var cameras = jsonObj.demoCameras;
+			var camCount = cameras.length;
+                                 alert("视频个数："+camCount);
+
+/* 摄像机参数
+			var subSerail = cameras[0].subSerail;
+			var cityCode = cameras[0].cityCode;
+			var vtduPort = cameras[0].vtduPort;
+			var city = cameras[0].city;
+			var indexCode = cameras[0].indexCode;
+			var description = cameras[0].description;
+			var hlsAddr = cameras[0].hlsAddr;
+			var ggLongitude = cameras[0].ggLongitude;
+			var ggLatitude = cameras[0].ggLatitude;
+			var webSocketUrl = cameras[0].webSocketUrl;
+			var streamType = cameras[0].streamType;
+			var cdnUrl = cameras[0].cdnUrl;
+			var likeCount = cameras[0].likeCount;		//喜欢的人数
+			var cameraName = cameras[0].cameraName;
+			var deviceStatus = cameras[0].deviceStatus;
+			var favoriteCount = cameras[0].favoriteCount;
+			var address = cameras[0].address;
+			var viewedCount = cameras[0].viewedCount;
+			var hlsPort = cameras[0].hlsPort;
+			var rtmpAddr = cameras[0].rtmpAddr;
+			var rtmpPort = cameras[0].rtmpPort;
+			var channel = cameras[0].channel;
+			var deviceSerial = cameras[0].deviceSerial;
+			var name = cameras[0].name;
+			var subChannel = cameras[0].subChannel;
+			var channelNo = cameras[0].channelNo;
+			var id = cameras[0].id;
+			var devType = cameras[0].devType;
+			var vodCoverUrl = cameras[0].vodCoverUrl;
+			var nickname = cameras[0].nickname;
+			var status = cameras[0].status;
+			var isOpenSound = cameras[0].isOpenSound;
+
+*/
+
+			var table1 = document.createElement("table");
+
+			var list = document.createElement("div");
+			var p1 = document.createElement("p");
+			var p1_text = document.createTextNode("[playlist]");
+			p1.appendChild(p1_text);
+			list.appendChild(p1);
+			var p2 = document.createElement("p");
+			var p2_text = document.createTextNode("NumberOfEntries="+camCount);
+			p2.appendChild(p2_text);
+			list.appendChild(p2);
+
+			
+			for(i=0;i<camCount;i++){
+
+				var subSerail = cameras[i].subSerail;
+				var cityCode = cameras[i].cityCode;
+				var vtduPort = cameras[i].vtduPort;
+				var city = cameras[i].city;
+				var indexCode = cameras[i].indexCode;
+				var description = cameras[i].description;
+				var hlsAddr = cameras[i].hlsAddr;
+				var ggLongitude = cameras[i].ggLongitude;
+				var ggLatitude = cameras[i].ggLatitude;
+				var webSocketUrl = cameras[i].webSocketUrl;
+				var streamType = cameras[i].streamType;
+				var cdnUrl = cameras[i].cdnUrl;
+				var likeCount = cameras[i].likeCount;		//喜欢的人数
+				var cameraName = cameras[i].cameraName;
+				var deviceStatus = cameras[i].deviceStatus;
+				var favoriteCount = cameras[i].favoriteCount;
+				var address = cameras[i].address;
+				var viewedCount = cameras[i].viewedCount;
+				var hlsPort = cameras[i].hlsPort;
+				var rtmpAddr = cameras[i].rtmpAddr;
+				var rtmpPort = cameras[i].rtmpPort;
+				var channel = cameras[i].channel;
+				var deviceSerial = cameras[i].deviceSerial;
+				var name = cameras[i].name;
+				var subChannel = cameras[i].subChannel;
+				var channelNo = cameras[i].channelNo;
+				var id = cameras[i].id;
+				var devType = cameras[i].devType;
+				var vodCoverUrl = cameras[i].vodCoverUrl;
+				var nickname = cameras[i].nickname;
+				var status = cameras[i].status;
+				var isOpenSound = cameras[i].isOpenSound;
+				
+				var streamUrl = "rtmp://"+rtmpAddr+":1935/livestream/"+subSerail+"_"+channelNo+"_1_1_0"
+
+				//var params0 = new Array(subSerail,cameraName,rtmpAddr,subChannel,channelNo,streamUrl,ggLongitude,ggLatitude);
+				var params = new Array(subSerail,cameraName,streamUrl,ggLongitude,ggLatitude,vodCoverUrl);
+
+				var tr = document.createElement("tr");
+
+				for(j=0;j<params.length;j++){
+					if(j==5){
+						var td = document.createElement("td");
+						var img = document.createElement("img");
+						img.src = params[j];
+						img.width = "200";
+						td.appendChild(img);
+						tr.appendChild(td);
+					}else{
+					var td = document.createElement("td");
+					var text = document.createTextNode(params[j]);
+					td.appendChild(text);
+					tr.appendChild(td);
+					}
+				}
+				table1.appendChild(tr);
+
+				//组装播放列表
+				var pUrl = document.createElement("div");
+				var pTitlel = document.createElement("div");
+				var urlText = document.createTextNode("File"+(i+1)+"="+streamUrl);
+				var TitleText = document.createTextNode("Title"+(i+1)+"="+cameraName);
+				pUrl.appendChild(urlText);
+				pTitlel.appendChild(TitleText);
+				list.appendChild(pUrl);
+				list.appendChild(pTitlel);
+			}
+			
+			document.getElementById("table").appendChild(table1);
+			document.getElementById("playList").appendChild(list);
+			document.getElementById("p1").innerHTML = "查询完成!";
+			
+
+/*
+[playlist]
+NumberOfEntries=29
+File1=rtmp://124.232.148.23:1935/live/sc_jzg_0001
+Title1=sc_jzg_0001-四川九寨沟五花海
+*/
+		}
+	}
+	
+	xhr.send(null);	
+}
+
+
+function queryAll(){
+	//清空页面
+	var t = document.getElementById("table");
+	while(t.hasChildNodes()){
+		t.removeChild(t.childNodes[0]);
+	}
+	var pl = document.getElementById("playList");
+	while(pl.hasChildNodes()){
+		pl.removeChild(pl.childNodes[0]);
+	}
+
+	document.getElementById("p1").innerHTML = "开始查询...";
+
+	var cams = new Array();
+	var ids = document.getElementById("camIds").value.split(","); //摄像机ID数组
+	for(cid=0;cid<ids.length;cid++){
+		cams = getCamArrayByCamId(ids[cid],cams);
+	}
+             var cameras = cams;
+	  var camCount = cameras.length;
+                 alert("视频个数："+camCount);
+
+	  var table1 = document.createElement("table");
+
+	  var list = document.createElement("div");
+	  var p1 = document.createElement("p");
+	  var p1_text = document.createTextNode("[playlist]");
+	  p1.appendChild(p1_text);
+	  list.appendChild(p1);
+	  var p2 = document.createElement("p");
+	  var p2_text = document.createTextNode("NumberOfEntries="+camCount);
+	  p2.appendChild(p2_text);
+	  list.appendChild(p2);
+
+	var i0 = 0;//下面循环出现异常进入catch语句时，用于调节播放列表的序号
+	  for(i=0;i<camCount;i++){
+		
+		try{
+	  	var subSerail = cameras[i].subSerail;
+	  	var cityCode = cameras[i].cityCode;
+	  	var vtduPort = cameras[i].vtduPort;
+	  	var city = cameras[i].city;
+	  	var indexCode = cameras[i].indexCode;
+	  	var description = cameras[i].description;
+	  	var hlsAddr = cameras[i].hlsAddr;
+	  	var ggLongitude = cameras[i].ggLongitude;
+	  	var ggLatitude = cameras[i].ggLatitude;
+	  	var webSocketUrl = cameras[i].webSocketUrl;
+	  	var streamType = cameras[i].streamType;
+	  	var cdnUrl = cameras[i].cdnUrl;
+	  	var likeCount = cameras[i].likeCount;		//喜欢的人数
+	  	var cameraName = cameras[i].cameraName;
+	  	var deviceStatus = cameras[i].deviceStatus;
+	  	var favoriteCount = cameras[i].favoriteCount;
+	  	var address = cameras[i].address;
+	  	var viewedCount = cameras[i].viewedCount;
+	  	var hlsPort = cameras[i].hlsPort;
+	  	var rtmpAddr = cameras[i].rtmpAddr;
+	  	var rtmpPort = cameras[i].rtmpPort;
+	  	var channel = cameras[i].channel;
+	  	var deviceSerial = cameras[i].deviceSerial;
+	  	var name = cameras[i].name;
+	  	var subChannel = cameras[i].subChannel;
+	  	var channelNo = cameras[i].channelNo;
+	  	var id = cameras[i].id;
+	  	var devType = cameras[i].devType;
+	  	var vodCoverUrl = cameras[i].vodCoverUrl;
+	  	var nickname = cameras[i].nickname;
+	  	var status = cameras[i].status;
+	  	var isOpenSound = cameras[i].isOpenSound;
+	  	
+	  	var streamUrl = "rtmp://"+rtmpAddr+":1935/livestream/"+subSerail+"_"+channelNo+"_1_1_0"
+
+	  	//var params0 = new Array(subSerail,cameraName,rtmpAddr,subChannel,channelNo,streamUrl,ggLongitude,ggLatitude);
+	  	var params = new Array(subSerail,cameraName,streamUrl,ggLongitude,ggLatitude,vodCoverUrl);
+
+	  	var tr = document.createElement("tr");
+
+	  	for(j=0;j<params.length;j++){
+	  		if(j==5){
+	  			var td = document.createElement("td");
+	  			var img = document.createElement("img");
+	  			img.src = params[j];
+	  			img.width = "200";
+	  			td.appendChild(img);
+	  			tr.appendChild(td);
+	  		}else{
+	  		var td = document.createElement("td");
+	  		var text = document.createTextNode(params[j]);
+	  		td.appendChild(text);
+	  		tr.appendChild(td);
+	  		}
+	  	}
+	  	table1.appendChild(tr);
+
+	  	//组装播放列表
+	  	var pUrl = document.createElement("div");
+	  	var pTitlel = document.createElement("div");
+	  	var urlText = document.createTextNode("File"+(i+i0+1)+"="+streamUrl);
+	  	var TitleText = document.createTextNode("Title"+(i+i0+1)+"="+cameraName);
+	  	pUrl.appendChild(urlText);
+	  	pTitlel.appendChild(TitleText);
+	  	list.appendChild(pUrl);
+	  	list.appendChild(pTitlel);
+
+		}catch(e){
+			i0--;
+			continue;
+		}
+	  }	
+		
+	 document.getElementById("table").appendChild(table1);
+	 document.getElementById("playList").appendChild(list);
+	//document.getElementById("ta").appendChild(list);
+	document.getElementById("p1").innerHTML = "查询完成!";
+}
+
+
+function getCamArrayByCamId(id,cams){
+	var url = "http://square.ys7.com/square/demoCameraApplyAction!queryShareCamera.action?cameraId=" + id;
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET",url,false);
+	xhr.onreadystatechange=function(){
+			cams = callback(id,cams,xhr);
+			return cams;
+		}
+		xhr.send(null);
+return cams;
+}
+
+function callback(id,cams,xhr){
+		if(4 == xhr.readyState && 200 == xhr.status){
+			var res = xhr.responseText;
+			var len = res.length;
+			var jsonStr = res.substring(res.indexOf("(")+1,len-1);
+                                 var jsonObj = eval("("+jsonStr+")");
+			//相机数组
+                                 var cameras = jsonObj.demoCameras;
+			cams = cams.concat(cameras);
+			return cams;
+
+		}
+}
+
+	
+</script>
+
+<style type="text/css">
+#cam  {
+/*border:1px solid;*/
+position:fixed;
+left:10px;
+top:10px;
+width:200px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="cam">
+<input type="text" id="camId" value="2014040" class="box" ondblClick="javascript:query();">
+<!--<input type="button" value="查询指定camID" class="box" onClick="javascript:query();">-->
+<br>双击输入框开始查询<br>
+<textarea class="box" cols=23 rows=4 id="camIds" ondblClick="javascript:queryAll();">
+2014040,2047822,2053862,1799714,2039108,1647014,
+1941232,1361984,1973324,2009358,1984396,1239888,
+1836282,1634052,902148,1966764,1767538,1212428,
+1669012,1812264,190296,17608,2060392,1794462,2009018,
+1772924,129568,1971662,2119918,2095382,2153038,
+1592230,1038462,237314,1304676,1962252,814424,885504,
+1827792,799402,1419826,1794462,2854,1536766,543682,
+2039784,2346236,2395556,543682</textarea>
+<!--<input type="button" class="box" value="查询多个camID" onClick="javascript:queryAll();">-->
+</div>
+<br><br><br><br><br><br>
+<p id="p1"></p>
+<a href="#list_a">跳到列表</a>
+<a name="top" id="top" ></a>
+
+<p id="p2"></p>
+<p id="p3"></p>
+
+<div id="table"></div>
+<a href="#top">跳到顶部</a>
+<a name="list_a" id="list_a" ></a>
+<div id="playList"></div>
+<!--<textarea id="ta" cols=100 rows=20></textarea>-->
+</body>
+</html>
