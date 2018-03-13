@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index</title>
+<title>desktop.ini文件给文件夹添加注释</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
@@ -291,10 +291,28 @@ img {
 </style>
 </head>
 <body>
-<p><img src=".\pics\home.jpg" alt="https://chengdong0421.github.io" /></p>
-<h1>Welcome to my blog</h1>
+<h1>[windows]用Desktop.ini自定义文件夹属性</h1>
 <hr />
-<p><a href="https://chengdong0421.github.io/blog/posts/2018/03/addInfoTip.html&quot;">[windows]用Desktop.ini自定义文件夹属性</a></p>
+<p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
+<h3>0x00 Desktop.ini文件介绍</h3>
+<p>desktop.ini是系统可识别的一个文件，作用是存储用户对文件夹的个性设置（用户更换文件夹图标等等都会生成desktop.ini）</p>
+<h3>0x01 给文件夹添加注释</h3>
+<p>文件夹注释是指在用鼠标指向文件夹时自动显示的说明信息，该信息可以自定义。<br />
+实现步骤：  </p>
+<p><strong>01.</strong> 在目标文件夹内新建文本文档，更名为<a href="https://baike.baidu.com/item/DESKTOP.INI/11001208?fr=aladdin">Desktop.ini</a>。用记事本打开，输入以下内容后保存：  </p>
+<pre><code>[.ShellClassInfo]  
+InfoTip=&quot;说明文字&quot;  
+</code></pre>
+
+<p><strong>02.</strong> 保存后，需要设置Desktop.ini文件的属性(添加系统文件属性)。如下：<br />
+&emsp;&emsp;1. Win+R -&gt; 输入cmd，回车，打开命令提示符。<br />
+&emsp;&emsp;2. 输入 <code>attrib desktop.ini文件路径 +s</code> 回车。<br />
+这样就将Desktop.ini添加了系统文件属性。（也可以将Desktop.ini文件设为隐藏文件：输入 <code>attrib desktop.ini文件路径 +h</code> 回车）  </p>
+<p><strong>03.</strong> 将目标文件夹添加R属性：<br />
+&emsp;&emsp;1. Win+R -&gt; 输入cmd，回车，打开命令提示符。 <br />
+&emsp;&emsp;2. 输入 <code>attrib 目标文件夹路径 +r</code> 回车。  </p>
+<p>&emsp;&emsp;操作完成后，文件夹就被添加了注释信息，当鼠标指向文件夹时，信息就会显示。  </p>
+<p>下载<a href="https://chengdong0421.github.io/files/addInfoTip.bat">addInfoTip.bat</a>，放到需要添加注释的文件夹内，双击执行，可以快速设置注释。</p>
 
 </body>
 </html>
