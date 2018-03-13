@@ -26,4 +26,4 @@ desktop.ini是系统可识别的一个文件，作用是存储用户对文件夹
 
 &emsp;&emsp;操作完成后，文件夹就被添加了注释信息，当鼠标指向文件夹时，信息就会显示。  
 
-下载[addInfoTip.bat](https://chengdong0421.github.io/files/addInfoTip.bat)，放到需要添加注释的文件夹内，双击执行，可以快速设置注释。
+下载[addInfoTip.bat](https://chengdong0421.github.io/files/setInfoTip.bat)，放到需要添加注释的文件夹内，双击执行，可以快速设置注释。
